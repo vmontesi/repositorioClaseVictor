@@ -12,4 +12,15 @@ public void testProbarNumerosUnoyDos() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals("Fizz", fizzBuzz.convertir(3));
     }
+    @org.junit.jupiter.api.Test
+    public void testProbarNumeroCuatroYCinco() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals("4", fizzBuzz.convertir(4));
+        assertEquals("Buzz", fizzBuzz.convertir(5));
+    }
+    @org.junit.jupiter.api.Test
+    public void testProbarNumeroSeis() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals("Fizz", fizzBuzz.convertir(6));
+    }
 }
