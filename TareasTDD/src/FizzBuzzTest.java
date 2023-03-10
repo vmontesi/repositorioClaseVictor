@@ -35,4 +35,17 @@ public void testProbarNumerosUnoyDos() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals("Buzz", fizzBuzz.convertir(10));
     }
+    @org.junit.jupiter.api.Test
+    public void testProbarNumeroOnceDoceTreceYCatorce() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals("11", fizzBuzz.convertir(11));
+        assertEquals("Fizz", fizzBuzz.convertir(12));
+        assertEquals("13", fizzBuzz.convertir(13));
+        assertEquals("14", fizzBuzz.convertir(14));
+    }
+    @org.junit.jupiter.api.Test
+    public void testProbarNumeroQuince() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals("FizzBuzz", fizzBuzz.convertir(15));
+    }
 }
