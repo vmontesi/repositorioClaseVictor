@@ -26,5 +26,10 @@ class OperacionesTDDTest {
         OperacionesTDD operacionesTDD = new OperacionesTDD();
         assertEquals(-1, operacionesTDD.suma("1,1,2,-1"));
     }
+    @org.junit.jupiter.api.Test
+    public void testSumarNoNumerosMayoresDeMil() {
+        OperacionesTDD operacionesTDD = new OperacionesTDD();
+        assertEquals(12, operacionesTDD.suma("1,11,2222"));
+    }
 
 }
