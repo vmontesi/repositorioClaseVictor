@@ -1,12 +1,15 @@
 public class OperacionesTDD {
     public int suma (String numeros) {
+        int resultado = 0;
         if (!numeros.isEmpty()){
-            int suma = 0;
             String[] num = numeros.split(",");
             for (String s : num) {
-                suma += Integer.parseInt(s);
+                if (s.equals(" ")){
+                    return -1;
+                }
+                resultado += Integer.parseInt(s);
             }
-            return suma;
+            return resultado;
         }
         return 0;
     }

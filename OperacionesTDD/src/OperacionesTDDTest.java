@@ -19,7 +19,7 @@ class OperacionesTDDTest {
     @org.junit.jupiter.api.Test
     public void testSumarTres() {
         OperacionesTDD operacionesTDD = new OperacionesTDD();
-        assertEquals(4, operacionesTDD.suma("1,1,2"));
+        assertEquals(-1, operacionesTDD.suma("1,1,2, "));
     }
 
 }
