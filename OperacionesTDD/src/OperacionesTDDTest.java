@@ -21,5 +21,10 @@ class OperacionesTDDTest {
         OperacionesTDD operacionesTDD = new OperacionesTDD();
         assertEquals(-1, operacionesTDD.suma("1,1,2, "));
     }
+    @org.junit.jupiter.api.Test
+    public void testSumarNoNumerosNegativos() {
+        OperacionesTDD operacionesTDD = new OperacionesTDD();
+        assertEquals(-1, operacionesTDD.suma("1,1,2,-1"));
+    }
 
 }
